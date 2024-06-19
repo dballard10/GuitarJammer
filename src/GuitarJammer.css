@@ -1,0 +1,32 @@
+body {
+    background-color: lightgrey;
+    font-family: Arial, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #f0e68c; /* yellowish tan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label, select, button {
+    margin: 10px 0;
+}
+
+#scaleOutput {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
