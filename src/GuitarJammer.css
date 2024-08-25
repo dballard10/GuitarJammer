@@ -1,32 +1,82 @@
 body {
-    background-color: lightgrey;
-    font-family: Arial, sans-serif;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  background-color: rgb(244, 237, 223);
+  font-family: Arial, sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-    text-align: center;
-    background-color: #f0e68c; /* yellowish tan */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+
+.keySelector {
+  z-index: 2;
+  background-color: rgb(198, 149, 35); /* Optional: Adds a background color to ensure it stands out */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 5px solid #000; /* Set border width, style, and color */
+  position: relative;
+  width: 500px;
+  margin: 0 auto; /* Center the element */
+  margin-bottom: -115px;
+}
+
+.guitarDisplay {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  right: 415px;
+}
+
+.guitarNeckImage {
+  width: 225%;
+  top: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.guitarNeckTable {
+  position: absolute;
+  top: 50%;
+  left: 85.5%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures fixed layout */
+  width: 100%; /* Ensures table takes full width */
+}
+
+.guitarNeckTable td {
+  border: 1px solid rgba(0, 0, 0, 0);
+  text-align: center;
+  vertical-align: middle;
+  color: red; /* Change this */
+}
+
+.noteCircle {
+  width: 100%; /* The SVG fills the width of the td */
+  position: relative; /* Position the circle absolutely within the td */
 }
 
 h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-label, select, button {
-    margin: 10px 0;
+label,
+select,
+button {
+  margin: 10px 0;
 }
 
 #scaleOutput {
-    margin-top: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
