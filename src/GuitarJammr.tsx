@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./GuitarJammer.css";
+import "./GuitarJammr.css";
 
-interface GuitarJammerProps {
+interface GuitarJammrProps {
   selectedKey: string;
   scale: string[];
   keys: string[];
@@ -11,7 +11,7 @@ interface GuitarJammerProps {
   onPentatonicChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const GuitarJammer: React.FC<GuitarJammerProps> = ({ selectedKey, scale, keys, guitarNeck, fretSizes, onKeyChange, onPentatonicChange }) => {
+const GuitarJammr: React.FC<GuitarJammrProps> = ({ selectedKey, scale, keys, guitarNeck, fretSizes, onKeyChange, onPentatonicChange }) => {
   return (
     <div className="container">
       <div className="keySelector">
@@ -65,4 +65,4 @@ const GuitarJammer: React.FC<GuitarJammerProps> = ({ selectedKey, scale, keys, g
   );
 };
 
-export default GuitarJammer;
+export default GuitarJammr;

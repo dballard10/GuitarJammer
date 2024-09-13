@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import GuitarJammer from "./GuitarJammer";
+import GuitarJammr from "./GuitarJammr";
 
 const chromaticScale = ["E", "F", "Gb", "G", "Ab", "A", "Bb", "B", "C", "Db", "D", "Eb"];
 const keys = ["E", "Em", "F", "Fm", "Gb", "Gbm", "G", "Gm", "Ab", "Abm", "A", "Am", "Bb", "Bbm", "B", "Bm", "C", "Cm", "Db", "Dbm", "D", "Dm", "Eb", "Ebm"];
@@ -172,7 +172,7 @@ function setNeckValues(selectedScale: string[], newGuitarNeck: number[][], guita
   }
 }
 
-function GuitarJammerContainer() {
+function GuitarJammrContainer() {
   useEffect(() => {
     setMap();
   }, []);
@@ -219,7 +219,7 @@ function GuitarJammerContainer() {
     }
   };
 
-  return <GuitarJammer selectedKey={selectedKey} scale={scale} keys={keys} guitarNeck={guitarNeck} fretSizes={fretSizes} onKeyChange={handleKeyChange} onPentatonicChange={handlePentatonicChange} />;
+  return <GuitarJammr selectedKey={selectedKey} scale={scale} keys={keys} guitarNeck={guitarNeck} fretSizes={fretSizes} onKeyChange={handleKeyChange} onPentatonicChange={handlePentatonicChange} />;
 }
 
-export default GuitarJammerContainer;
+export default GuitarJammrContainer;

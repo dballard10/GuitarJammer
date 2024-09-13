@@ -5,7 +5,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "/src/GuitarJammerContainer.js"
+      "program": "/src/GuitarJammrContainer.js"
     }
   ]
 }
