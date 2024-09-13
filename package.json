@@ -1,7 +1,7 @@
 {
   "name": "guitar-jammer",
   "version": "1.0.0",
-  "description": "Guitar Jammer 1.0",
+  "description": "Guitar Jammr 1.0",
   "main": "index.tsx",
   "type": "module",
   "scripts": {
