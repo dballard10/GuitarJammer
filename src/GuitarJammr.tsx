@@ -15,7 +15,7 @@ const GuitarJammr: React.FC<GuitarJammrProps> = ({ selectedKey, scale, keys, gui
   return (
     <div className="container">
       <div className="keySelector">
-        <h1>Guitar Jammer</h1>
+        <h1>Guitar Jammr</h1>
         <label htmlFor="keySelect">Select a Key: </label>
         <select id="keySelect" onChange={onKeyChange} value={selectedKey}>
           <option value="" disabled>

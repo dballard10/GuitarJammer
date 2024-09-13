@@ -132,7 +132,7 @@ function GuitarJammr() {
     React.createElement(
       "div",
       { className: "keySelector" },
-      React.createElement("h1", null, "Guitar Jammer"),
+      React.createElement("h1", null, "Guitar Jammr"),
       React.createElement("label", { htmlFor: "keySelect" }, "Select a Key: "),
       React.createElement(
         "select",
